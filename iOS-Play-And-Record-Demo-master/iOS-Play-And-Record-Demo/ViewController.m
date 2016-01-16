@@ -11,12 +11,17 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    float decibel;
+    
+}
 
 @property (nonatomic)     AVAudioPlayer       *player;
 @property (nonatomic)     AVAudioRecorder     *recorder;
 @property (nonatomic)     NSString            *recordedAudioFileName;
 @property (nonatomic)     NSURL               *recordedAudioURL;
+@property(nonatomic, strong) AVAudioPlayer *backgroundMusic;
+
 
 - (IBAction)play:(id)sender;
 - (IBAction)recordingForTouchDown:(id)sender;
@@ -35,6 +40,17 @@
     if (IMPEDE_PLAYBACK) {
         [AudioSessionManager setAudioSessionCategory:AVAudioSessionCategoryPlayAndRecord];
     }
+    NSURL *musicFile = [[NSBundle mainBundle] URLForResource:@"music"
+                                               withExtension:@"mp3"];
+    self.backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile
+                                                                  error:nil];
+    self.backgroundMusic.numberOfLoops = -1;
+    //[self.backgroundMusic play];
+    [NSTimer scheduledTimerWithTimeInterval:1.0
+                                     target:self
+                                   selector:@selector(printDecibel)
+                                   userInfo:nil
+                                    repeats:YES];
 }
 
 #pragma mark Playback
@@ -56,7 +72,25 @@
 - (IBAction)recordingForTouchDown:(id)sender
 {
     [self setupAndPrepareToRecord];
+    [recorder updateMeters];
     [recorder recordForDuration:30];
+       NSLog(@"THE LOG SCORE : %f", decibel);
+
+}
+- (IBAction)print:(id)sender {
+    decibel = [recorder averagePowerForChannel:0];
+
+    NSLog(@"THE LOG SCORE : %f", decibel);
+}
+-(void) printDecibel{
+    decibel = [recorder averagePowerForChannel:0];
+    
+    NSLog(@"THE LOG SCORE : %f", decibel);
+}
+- (IBAction)record:(id)sender {
+    [self setupAndPrepareToRecord];
+    [recorder updateMeters];
+    [recorder record];
 }
 
 - (IBAction)endRecording:(id)sender
@@ -84,12 +118,13 @@
     NSMutableDictionary *recordSetting = [[NSMutableDictionary alloc] init];
     [recordSetting setValue:[NSNumber numberWithInt:kAudioFormatMPEG4AAC] forKey:AVFormatIDKey];
     [recordSetting setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
-    [recordSetting setValue:[NSNumber numberWithInt: 2] forKey:AVNumberOfChannelsKey];
+    [recordSetting setValue:[NSNumber numberWithInt: 1] forKey:AVNumberOfChannelsKey];
     
     // initiate recorder
     NSError *error;
     recorder = [[AVAudioRecorder alloc] initWithURL:[self recordedAudioURL] settings:recordSetting error:&error];
     [recorder prepareToRecord];
+    recorder.meteringEnabled = YES;
 }
 
 #pragma mark AVAudioPlayerDelegate
