@@ -9,12 +9,16 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 @interface ViewController () <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
+{
+    
+    AVAudioRecorder *recorder;
+    AVAudioPlayer *player;
+}
 @property(nonatomic, strong) AVAudioPlayer *backgroundMusic;
 @end
 
 @implementation ViewController
-AVAudioRecorder *recorder;
-AVAudioPlayer *player;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSURL *musicFile = [[NSBundle mainBundle] URLForResource:@"music"withExtension:@"mp3"];
@@ -24,16 +28,21 @@ AVAudioPlayer *player;
   
     
    
-    NSArray *pathComponents = [NSArray arrayWithObjects:
+    NSArray *pathComponents2 = [NSArray arrayWithObjects:
                                [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject],
                                @"music.mp3",
                                nil];
+    // Set path file
+    NSArray *pathComponents = [NSArray arrayWithObjects:
+                                [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject],
+                                @"myMusic.m4a",
+                                nil];
     NSURL *outputFileURL = [NSURL fileURLWithPathComponents:pathComponents];
     
     // Setup audio session
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-    
+    NSMutableData *recordString = [[NSMutableDictionary alloc]init];
     // Define the recorder setting
     NSDictionary* recordSettings = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:kAudioFormatAppleIMA4],AVFormatIDKey,[NSNumber numberWithInt:44100],AVSampleRateKey,[NSNumber numberWithInt:1],AVNumberOfChannelsKey,[NSNumber numberWithInt:16],AVLinearPCMBitDepthKey,[NSNumber numberWithBool:NO],AVLinearPCMIsBigEndianKey,[NSNumber numberWithBool:NO],AVLinearPCMIsFloatKey,nil];
     NSError* error = nil;
@@ -50,7 +59,7 @@ AVAudioPlayer *player;
     [recorder prepareToRecord];
 }
 int num = 1;
-- (IBAction)playButton:(id)sender {
+- (IBAction)playTapped:(id)sender {
 //    if(num == 0) num = 1;
 //    if (num == 1) num = 0;
     
@@ -61,9 +70,9 @@ int num = 1;
         // Start recording
         [recorder record];
         self.backgroundMusic.numberOfLoops = -1;
-        [self.backgroundMusic play];
+        //[self.backgroundMusic play];
         [recorder updateMeters];
-       NSLog(@"%f", [recorder averagePowerForChannel:5]);
+       NSLog(@"%f", [recorder averagePowerForChannel:0]);
     }
 //    while (num == 0) {
 //        [recorder pause];

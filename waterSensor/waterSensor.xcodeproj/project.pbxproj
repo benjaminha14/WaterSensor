@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3615A4B61C48D49400BCC427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3615A4B51C48D49400BCC427 /* AppDelegate.swift */; };
+		3615A4B81C48D49400BCC427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3615A4B71C48D49400BCC427 /* ViewController.swift */; };
+		3615A4BB1C48D49400BCC427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3615A4B91C48D49400BCC427 /* Main.storyboard */; };
+		3615A4BE1C48D49400BCC427 /* waterSensor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3615A4BC1C48D49400BCC427 /* waterSensor.xcdatamodeld */; };
+		3615A4C01C48D49400BCC427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3615A4BF1C48D49400BCC427 /* Assets.xcassets */; };
+		3615A4C31C48D49400BCC427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3615A4C11C48D49400BCC427 /* LaunchScreen.storyboard */; };
+		3615A4CE1C48D49400BCC427 /* waterSensorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3615A4CD1C48D49400BCC427 /* waterSensorTests.swift */; };
+		3615A4D91C48D98200BCC427 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3615A4D81C48D98200BCC427 /* music.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3615A4CA1C48D49400BCC427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3615A4AA1C48D49300BCC427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3615A4B11C48D49400BCC427;
+			remoteInfo = waterSensor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3615A4B21C48D49400BCC427 /* waterSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waterSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3615A4B51C48D49400BCC427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3615A4B71C48D49400BCC427 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3615A4BA1C48D49400BCC427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3615A4BD1C48D49400BCC427 /* waterSensor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = waterSensor.xcdatamodel; sourceTree = "<group>"; };
+		3615A4BF1C48D49400BCC427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3615A4C21C48D49400BCC427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3615A4C41C48D49400BCC427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3615A4C91C48D49400BCC427 /* waterSensorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = waterSensorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3615A4CD1C48D49400BCC427 /* waterSensorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waterSensorTests.swift; sourceTree = "<group>"; };
+		3615A4CF1C48D49400BCC427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3615A4D81C48D98200BCC427 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3615A4AF1C48D49400BCC427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3615A4C61C48D49400BCC427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3615A4A91C48D49300BCC427 = {
+			isa = PBXGroup;
+			children = (
+				3615A4B41C48D49400BCC427 /* waterSensor */,
+				3615A4CC1C48D49400BCC427 /* waterSensorTests */,
+				3615A4B31C48D49400BCC427 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3615A4B31C48D49400BCC427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3615A4B21C48D49400BCC427 /* waterSensor.app */,
+				3615A4C91C48D49400BCC427 /* waterSensorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3615A4B41C48D49400BCC427 /* waterSensor */ = {
+			isa = PBXGroup;
+			children = (
+				3615A4B51C48D49400BCC427 /* AppDelegate.swift */,
+				3615A4B71C48D49400BCC427 /* ViewController.swift */,
+				3615A4B91C48D49400BCC427 /* Main.storyboard */,
+				3615A4BF1C48D49400BCC427 /* Assets.xcassets */,
+				3615A4D81C48D98200BCC427 /* music.mp3 */,
+				3615A4C11C48D49400BCC427 /* LaunchScreen.storyboard */,
+				3615A4C41C48D49400BCC427 /* Info.plist */,
+				3615A4BC1C48D49400BCC427 /* waterSensor.xcdatamodeld */,
+			);
+			path = waterSensor;
+			sourceTree = "<group>";
+		};
+		3615A4CC1C48D49400BCC427 /* waterSensorTests */ = {
+			isa = PBXGroup;
+			children = (
+				3615A4CD1C48D49400BCC427 /* waterSensorTests.swift */,
+				3615A4CF1C48D49400BCC427 /* Info.plist */,
+			);
+			path = waterSensorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3615A4B11C48D49400BCC427 /* waterSensor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3615A4D21C48D49400BCC427 /* Build configuration list for PBXNativeTarget "waterSensor" */;
+			buildPhases = (
+				3615A4AE1C48D49400BCC427 /* Sources */,
+				3615A4AF1C48D49400BCC427 /* Frameworks */,
+				3615A4B01C48D49400BCC427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = waterSensor;
+			productName = waterSensor;
+			productReference = 3615A4B21C48D49400BCC427 /* waterSensor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3615A4C81C48D49400BCC427 /* waterSensorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3615A4D51C48D49400BCC427 /* Build configuration list for PBXNativeTarget "waterSensorTests" */;
+			buildPhases = (
+				3615A4C51C48D49400BCC427 /* Sources */,
+				3615A4C61C48D49400BCC427 /* Frameworks */,
+				3615A4C71C48D49400BCC427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3615A4CB1C48D49400BCC427 /* PBXTargetDependency */,
+			);
+			name = waterSensorTests;
+			productName = waterSensorTests;
+			productReference = 3615A4C91C48D49400BCC427 /* waterSensorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3615A4AA1C48D49300BCC427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ben Ha";
+				TargetAttributes = {
+					3615A4B11C48D49400BCC427 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					3615A4C81C48D49400BCC427 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3615A4B11C48D49400BCC427;
+					};
+				};
+			};
+			buildConfigurationList = 3615A4AD1C48D49300BCC427 /* Build configuration list for PBXProject "waterSensor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3615A4A91C48D49300BCC427;
+			productRefGroup = 3615A4B31C48D49400BCC427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3615A4B11C48D49400BCC427 /* waterSensor */,
+				3615A4C81C48D49400BCC427 /* waterSensorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3615A4B01C48D49400BCC427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3615A4D91C48D98200BCC427 /* music.mp3 in Resources */,
+				3615A4C31C48D49400BCC427 /* LaunchScreen.storyboard in Resources */,
+				3615A4C01C48D49400BCC427 /* Assets.xcassets in Resources */,
+				3615A4BB1C48D49400BCC427 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3615A4C71C48D49400BCC427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3615A4AE1C48D49400BCC427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3615A4BE1C48D49400BCC427 /* waterSensor.xcdatamodeld in Sources */,
+				3615A4B81C48D49400BCC427 /* ViewController.swift in Sources */,
+				3615A4B61C48D49400BCC427 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3615A4C51C48D49400BCC427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3615A4CE1C48D49400BCC427 /* waterSensorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3615A4CB1C48D49400BCC427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3615A4B11C48D49400BCC427 /* waterSensor */;
+			targetProxy = 3615A4CA1C48D49400BCC427 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3615A4B91C48D49400BCC427 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3615A4BA1C48D49400BCC427 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3615A4C11C48D49400BCC427 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3615A4C21C48D49400BCC427 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3615A4D01C48D49400BCC427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3615A4D11C48D49400BCC427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3615A4D31C48D49400BCC427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = waterSensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benjaminha.waterSensor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3615A4D41C48D49400BCC427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = waterSensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benjaminha.waterSensor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3615A4D61C48D49400BCC427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = waterSensorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benjaminha.waterSensorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/waterSensor.app/waterSensor";
+			};
+			name = Debug;
+		};
+		3615A4D71C48D49400BCC427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = waterSensorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benjaminha.waterSensorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/waterSensor.app/waterSensor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3615A4AD1C48D49300BCC427 /* Build configuration list for PBXProject "waterSensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3615A4D01C48D49400BCC427 /* Debug */,
+				3615A4D11C48D49400BCC427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3615A4D21C48D49400BCC427 /* Build configuration list for PBXNativeTarget "waterSensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3615A4D31C48D49400BCC427 /* Debug */,
+				3615A4D41C48D49400BCC427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3615A4D51C48D49400BCC427 /* Build configuration list for PBXNativeTarget "waterSensorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3615A4D61C48D49400BCC427 /* Debug */,
+				3615A4D71C48D49400BCC427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3615A4BC1C48D49400BCC427 /* waterSensor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3615A4BD1C48D49400BCC427 /* waterSensor.xcdatamodel */,
+			);
+			currentVersion = 3615A4BD1C48D49400BCC427 /* waterSensor.xcdatamodel */;
+			path = waterSensor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3615A4AA1C48D49300BCC427 /* Project object */;
+}
