@@ -48,7 +48,7 @@
                                 <items>
                                     <barButtonItem id="tQI-S9-P0s"/>
                                     <barButtonItem style="plain" id="CpV-cZ-rVM">
-                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Low" textAlignment="center" minimumFontSize="17" id="jwT-bL-gXl">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Low" textAlignment="center" minimumFontSize="17" id="jwT-bL-gXl">
                                             <rect key="frame" x="30" y="7" width="97" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
@@ -57,7 +57,7 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="bts-3V-bys"/>
                                     <barButtonItem style="plain" id="ozC-fn-L41">
-                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Average" textAlignment="center" minimumFontSize="17" id="It8-9J-jms">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Average" textAlignment="center" minimumFontSize="17" id="It8-9J-jms">
                                             <rect key="frame" x="251" y="7" width="97" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
@@ -66,7 +66,7 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="1W1-xS-4E6"/>
                                     <barButtonItem style="plain" id="IQZ-Nm-rOg">
-                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="High" textAlignment="center" minimumFontSize="17" id="64n-3V-JZX">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="High" textAlignment="center" minimumFontSize="17" id="64n-3V-JZX">
                                             <rect key="frame" x="483" y="7" width="97" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
