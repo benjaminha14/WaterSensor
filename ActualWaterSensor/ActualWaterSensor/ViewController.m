@@ -103,6 +103,7 @@
     //NSLog(@"THE LOG SCORE : %.02f", actualDecibel);
     
 }
+
 - (IBAction)record:(id)sender {
     [self setupAndPrepareToRecord];
     
