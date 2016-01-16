@@ -47,8 +47,8 @@
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
                                     <barButtonItem id="tQI-S9-P0s"/>
-                                    <barButtonItem style="plain" id="Hb1-MI-IZx">
-                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Low" textAlignment="natural" minimumFontSize="17" id="rNG-VQ-Qd4">
+                                    <barButtonItem style="plain" id="CpV-cZ-rVM">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Low" textAlignment="center" minimumFontSize="17" id="jwT-bL-gXl">
                                             <rect key="frame" x="30" y="7" width="97" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
