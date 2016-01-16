@@ -58,14 +58,21 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Put The Fucking Out put here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oTc-LT-SKo">
+                                <rect key="frame" x="195" y="128" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iem-rj-st6" secondAttribute="trailing" id="3zc-sg-wz3"/>
                             <constraint firstItem="oZO-te-AgU" firstAttribute="leading" secondItem="041-sE-Tu7" secondAttribute="leading" constant="233" id="JO1-fh-bna"/>
+                            <constraint firstItem="oTc-LT-SKo" firstAttribute="top" secondItem="iem-rj-st6" secondAttribute="bottom" constant="84" id="OAz-yG-44G"/>
                             <constraint firstItem="TJ4-x7-mDJ" firstAttribute="top" secondItem="rsI-m5-0I7" secondAttribute="bottom" constant="248" id="QsU-kK-eJp"/>
                             <constraint firstItem="TJ4-x7-mDJ" firstAttribute="leading" secondItem="041-sE-Tu7" secondAttribute="leadingMargin" constant="47" id="Wfi-vq-9ko"/>
                             <constraint firstItem="pO8-oz-arW" firstAttribute="leading" secondItem="oZO-te-AgU" secondAttribute="trailing" constant="99" id="krb-sZ-Iif"/>
+                            <constraint firstItem="oTc-LT-SKo" firstAttribute="centerX" secondItem="iem-rj-st6" secondAttribute="centerX" id="o8T-gW-zCa"/>
                             <constraint firstItem="iem-rj-st6" firstAttribute="leading" secondItem="041-sE-Tu7" secondAttribute="leading" id="p1R-JY-Fzh"/>
                             <constraint firstItem="iem-rj-st6" firstAttribute="top" secondItem="041-sE-Tu7" secondAttribute="top" id="tdp-Pq-I3z"/>
                             <constraint firstItem="TJ4-x7-mDJ" firstAttribute="baseline" secondItem="oZO-te-AgU" secondAttribute="baseline" id="zNd-dP-LAX"/>
@@ -84,7 +91,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo small" width="40" height="40"/>
+        <image name="logo small" width="30" height="30"/>
     </resources>
     <color key="tintColor" red="1" green="0.34172453147280324" blue="0.40626519690345753" alpha="1" colorSpace="calibratedRGB"/>
 </document>
