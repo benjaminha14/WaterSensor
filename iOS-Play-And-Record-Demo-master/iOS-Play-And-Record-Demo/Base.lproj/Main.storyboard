@@ -20,39 +20,23 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l13-t3-QIQ">
                                 <rect key="frame" x="20" y="286" width="138" height="90"/>
-                                <color key="backgroundColor" red="0.21322310656768673" green="0.37934323597312414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.34172453149999998" blue="0.40626519690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="a6g-Ee-ZcT"/>
                                     <constraint firstAttribute="width" constant="138" id="kJG-V1-8pb"/>
                                 </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Record">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.12448415390000001" green="0.22569637419999999" blue="0.89646444520000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.98431372549019602" green="0.23921568627450981" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="record:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jjc-bu-tYJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g5-0q-UVl">
-                                <rect key="frame" x="162" y="286" width="138" height="90"/>
-                                <color key="backgroundColor" red="0.21322310656768673" green="0.37934323597312414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Play">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.12448415390000001" green="0.22569637419999999" blue="0.89646444520000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NtE-q7-58L"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press and hold to record. Tap to play." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsQ-Kr-X7F">
@@ -61,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="21" id="OlM-Jy-n8D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWS-KG-Dpi">
@@ -89,10 +73,38 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g5-0q-UVl">
+                                <rect key="frame" x="162" y="285" width="138" height="90"/>
+                                <color key="backgroundColor" red="1" green="0.34172453149999998" blue="0.40626519690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="1" green="0.34172453149999998" blue="0.40626519690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Test">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.98431372549019602" green="0.23921568627450981" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NtE-q7-58L"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fucking Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="whk-Hu-qRX">
+                                <rect key="frame" x="105" y="117" width="111" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DUR-j6-oZe"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.34172453149999998" blue="0.40626519690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.34172453149999998" blue="0.40626519690000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="l13-t3-QIQ" firstAttribute="bottom" secondItem="5g5-0q-UVl" secondAttribute="bottom" id="1ob-Rv-Kwq"/>
+                            <constraint firstItem="l13-t3-QIQ" firstAttribute="bottom" secondItem="5g5-0q-UVl" secondAttribute="bottom" constant="1" id="1ob-Rv-Kwq"/>
                             <constraint firstItem="l13-t3-QIQ" firstAttribute="top" secondItem="XsQ-Kr-X7F" secondAttribute="bottom" constant="50" id="1xj-Tx-msy"/>
                             <constraint firstItem="2qB-6T-B9T" firstAttribute="top" secondItem="OlO-LN-wUQ" secondAttribute="bottom" id="2d7-wh-IvZ"/>
                             <constraint firstItem="XsQ-Kr-X7F" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="K0f-fy-zjR"/>
@@ -101,11 +113,14 @@
                             <constraint firstItem="XsQ-Kr-X7F" firstAttribute="top" secondItem="OlO-LN-wUQ" secondAttribute="bottom" constant="195" id="Wb4-n1-Gvr"/>
                             <constraint firstItem="2qB-6T-B9T" firstAttribute="centerX" secondItem="XsQ-Kr-X7F" secondAttribute="centerX" id="b62-dY-DCJ"/>
                             <constraint firstItem="ztO-jo-yxh" firstAttribute="top" secondItem="IWS-KG-Dpi" secondAttribute="bottom" constant="38" id="efC-fC-JuT"/>
-                            <constraint firstItem="l13-t3-QIQ" firstAttribute="top" secondItem="5g5-0q-UVl" secondAttribute="top" id="inn-oA-Dgj"/>
+                            <constraint firstItem="l13-t3-QIQ" firstAttribute="top" secondItem="5g5-0q-UVl" secondAttribute="top" constant="1" id="inn-oA-Dgj"/>
                             <constraint firstItem="5g5-0q-UVl" firstAttribute="trailing" secondItem="XsQ-Kr-X7F" secondAttribute="trailing" id="nQt-ST-jvi"/>
+                            <constraint firstItem="whk-Hu-qRX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="89" id="pMS-RT-PZp"/>
                             <constraint firstItem="5g5-0q-UVl" firstAttribute="leading" secondItem="l13-t3-QIQ" secondAttribute="trailing" constant="4" id="pir-c4-Ue2"/>
+                            <constraint firstItem="whk-Hu-qRX" firstAttribute="centerX" secondItem="XsQ-Kr-X7F" secondAttribute="centerX" id="qd7-YE-gXs"/>
                             <constraint firstItem="XsQ-Kr-X7F" firstAttribute="leading" secondItem="l13-t3-QIQ" secondAttribute="leading" id="sbK-XU-7hC"/>
                             <constraint firstItem="2qB-6T-B9T" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="wxc-BE-RrT"/>
+                            <constraint firstItem="whk-Hu-qRX" firstAttribute="top" secondItem="2qB-6T-B9T" secondAttribute="bottom" constant="53" id="zXq-Aj-Een"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -116,4 +131,5 @@
     <resources>
         <image name="small logo" width="30" height="30"/>
     </resources>
+    <color key="tintColor" red="1" green="0.34172453149999998" blue="0.40626519690000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>

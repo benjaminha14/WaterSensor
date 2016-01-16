@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		36E6A8541C4A13D600638E77 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36E6A8531C4A13D600638E77 /* music.mp3 */; };
+		ABE46C1C1C4A2EF200175B6C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE46C1B1C4A2EF200175B6C /* Launch Screen.storyboard */; };
 		C97FF5D318BBF0EE0077C3A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97FF5D218BBF0EE0077C3A2 /* Foundation.framework */; };
 		C97FF5D518BBF0EE0077C3A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97FF5D418BBF0EE0077C3A2 /* CoreGraphics.framework */; };
 		C97FF5D718BBF0EE0077C3A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97FF5D618BBF0EE0077C3A2 /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		36E6A8531C4A13D600638E77 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		ABE46C1B1C4A2EF200175B6C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C97FF5CF18BBF0EE0077C3A2 /* iOS-Play-And-Record-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Play-And-Record-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97FF5D218BBF0EE0077C3A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C97FF5D418BBF0EE0077C3A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +123,7 @@
 				C97FF5E118BBF0EE0077C3A2 /* AppDelegate.h */,
 				C97FF5E218BBF0EE0077C3A2 /* AppDelegate.m */,
 				C97FF5E418BBF0EE0077C3A2 /* Main.storyboard */,
+				ABE46C1B1C4A2EF200175B6C /* Launch Screen.storyboard */,
 				C97FF5E718BBF0EE0077C3A2 /* ViewController.h */,
 				C97FF5E818BBF0EE0077C3A2 /* ViewController.m */,
 				C97FF5EA18BBF0EE0077C3A2 /* Images.xcassets */,
@@ -216,7 +219,7 @@
 				ORGANIZATIONNAME = "Matthew Loseke";
 				TargetAttributes = {
 					C97FF5CE18BBF0EE0077C3A2 = {
-						DevelopmentTeam = 4TEHJ74345;
+						DevelopmentTeam = HXAUJAN47Z;
 					};
 					C97FF5EF18BBF0EE0077C3A2 = {
 						TestTargetID = C97FF5CE18BBF0EE0077C3A2;
@@ -250,6 +253,7 @@
 				36E6A8541C4A13D600638E77 /* music.mp3 in Resources */,
 				C97FF5EB18BBF0EE0077C3A2 /* Images.xcassets in Resources */,
 				C97FF5DD18BBF0EE0077C3A2 /* InfoPlist.strings in Resources */,
+				ABE46C1C1C4A2EF200175B6C /* Launch Screen.storyboard in Resources */,
 				C97FF5E618BBF0EE0077C3A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,7 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -406,6 +410,7 @@
 				INFOPLIST_FILE = "iOS-Play-And-Record-Demo/iOS-Play-And-Record-Demo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -414,7 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -422,6 +427,7 @@
 				INFOPLIST_FILE = "iOS-Play-And-Record-Demo/iOS-Play-And-Record-Demo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
