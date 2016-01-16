@@ -10,7 +10,10 @@
     int count;
     double average;
     double actualDecibel;
+    int smallestDecibel;
     //  AVAudioSession *session;
+    NSTimer *timer;
+    NSString *response;
     
     
 }
@@ -58,13 +61,10 @@
                                                                   error:nil];
     self.backgroundMusic.numberOfLoops = -1;
     [self.backgroundMusic play];
+    smallestDecibel = [self highestDecible];
     
     
-    [NSTimer scheduledTimerWithTimeInterval:0.5
-                                     target:self
-                                   selector:@selector(printDecibel)
-                                   userInfo:nil
-                                    repeats:YES];
+   
 }
 
 #pragma mark Playback
@@ -72,41 +72,18 @@
 
 #pragma mark Recording
 
-
--(void) printDecibel{
-    
+-(int)averageDecibel{
     [recorder updateMeters];
-    decibel = [recorder averagePowerForChannel:0];
-    decibel = decibel *100.0;
-    int newDecibel = (int)decibel;
-    
-    if(count <=5)
-    {
-        count++;
-        actualDecibel= (double)newDecibel/100.0;
-        actualDecibel+=actualDecibel;
-    }else{
-        average = actualDecibel/count;
-        //100 = 100% water
-        
-        //0
-        _output.text = [NSString stringWithFormat: @"%d", (abs)((int)average)];
-        count = 0;
-        
-        
-    }
-    
-    
-    
-    
-    
-    //NSLog(@"THE LOG SCORE : %.02f", actualDecibel);
-    
+    return [recorder averagePowerForChannel:0];
 }
 
 - (IBAction)record:(id)sender {
     [self setupAndPrepareToRecord];
-    
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.5
+                                             target:self
+                                           selector:@selector(printDecibel)
+                                           userInfo:nil
+                                            repeats:YES];
     
     [recorder record];
     
@@ -115,8 +92,41 @@
 }
 //Dont touch
 - (IBAction)stop:(id)sender {
-    decibel = -160;
-    [recorder stop];
+    [self resetRunningAverage];
+    [timer invalidate];
+}
+-(void)resetRunningAverage{
+    average = 0;
+    count = 0;
+}
+-(int) runningAverage{
+    average += (abs)([self averageDecibel]);
+    count++;
+    return average/count;
+}
+-(int) highestDecible{
+    return [recorder peakPowerForChannel:0];
+}
+-(int)lowestDecible: (int)decible{
+    if(decible < smallestDecibel){
+        smallestDecibel = decibel;
+    }
+    return smallestDecibel;
+}
+/*
+-(int) convertPercentage{
+    
+}*/
+-(NSString *)labelText:(int) decible{
+    if(decibel > 60){
+        response = @"Dry";
+    }else if (decibel <= 60 && decibel >=30)
+    {
+        response = @"Moist";
+    }else{
+        response = @"Wet";
+    }
+    return response;
 }
 
 - (void)setupAndPrepareToRecord
