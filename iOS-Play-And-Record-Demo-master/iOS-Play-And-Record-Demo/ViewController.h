@@ -11,5 +11,6 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController <AVAudioPlayerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *output;
 
 @end

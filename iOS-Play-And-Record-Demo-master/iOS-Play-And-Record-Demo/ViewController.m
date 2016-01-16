@@ -1,18 +1,14 @@
-//
-//  ViewController.m
-//  iOS-Play-And-Record-Demo
-//
-//  Created by Matthew Loseke on 2/24/14.
-//  Copyright (c) 2014 Matthew Loseke. All rights reserved.
-//
+
 
 /* Set this to YES to reproduce the playback issue */
 #define IMPEDE_PLAYBACK NO
 
 #import "ViewController.h"
-
+#import <AVFoundation/AVAudioSession.h>
 @interface ViewController (){
     float decibel;
+  //  AVAudioSession *session;
+    
     
 }
 
@@ -23,9 +19,7 @@
 @property(nonatomic, strong) AVAudioPlayer *backgroundMusic;
 
 
-- (IBAction)play:(id)sender;
-- (IBAction)recordingForTouchDown:(id)sender;
-- (IBAction)endRecording:(id)sender;
+
 
 @end
 
@@ -36,17 +30,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 
-    if (IMPEDE_PLAYBACK) {
-        [AudioSessionManager setAudioSessionCategory:AVAudioSessionCategoryPlayAndRecord];
-    }
-    NSURL *musicFile = [[NSBundle mainBundle] URLForResource:@"music"
+   
+   NSURL *musicFile = [[NSBundle mainBundle] URLForResource:@"music"
                                                withExtension:@"mp3"];
-    self.backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile
-                                                                  error:nil];
-    self.backgroundMusic.numberOfLoops = -1;
-    //[self.backgroundMusic play];
-    [NSTimer scheduledTimerWithTimeInterval:1.0
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    NSError *setCategoryError = nil;
+    [audioSession setCategory:AVAudioSessionCategoryPlayback
+                  withOptions:AVAudioSessionCategoryOptionMixWithOthers
+                        error:&setCategoryError];
+    [audioSession setActive:YES error:nil];
+
+    
+//   
+//    NSError *err = nil;
+//    
+//    [session setCategory:AVAudioSessionCategoryPlayAndRecord  withOptions:AVAudioSessionCategoryOptionMixWithOthers|AVAudioSessionCategoryOptionDefaultToSpeaker error:nil];
+//    
+//    [session setActive:YES error:&err];
+   
+
+//    self.backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile
+//                                                            error:nil];
+//    self.backgroundMusic.numberOfLoops = -1;
+//    [self.backgroundMusic play];
+    
+ 
+    [NSTimer scheduledTimerWithTimeInterval:0.5
                                      target:self
                                    selector:@selector(printDecibel)
                                    userInfo:nil
@@ -55,47 +66,24 @@
 
 #pragma mark Playback
 
-- (IBAction)play:(id)sender
-{
-    if (!IMPEDE_PLAYBACK) {
-        [AudioSessionManager setAudioSessionCategory:AVAudioSessionCategoryPlayback];
-    }
-    
-    NSError *audioError;
-    player = [[AVAudioPlayer alloc] initWithContentsOfURL:[self recordedAudioURL] error:&audioError];
-    player.delegate = self;
-    [player play];
-}
 
 #pragma mark Recording
 
-- (IBAction)recordingForTouchDown:(id)sender
-{
-    [self setupAndPrepareToRecord];
-    [recorder updateMeters];
-    [recorder recordForDuration:30];
-       NSLog(@"THE LOG SCORE : %f", decibel);
 
-}
-- (IBAction)print:(id)sender {
-    decibel = [recorder averagePowerForChannel:0];
-
-    NSLog(@"THE LOG SCORE : %f", decibel);
-}
 -(void) printDecibel{
+    [recorder updateMeters];
     decibel = [recorder averagePowerForChannel:0];
-    
+    _output.text = [NSString stringWithFormat: @"%f", decibel];
     NSLog(@"THE LOG SCORE : %f", decibel);
+  
 }
 - (IBAction)record:(id)sender {
     [self setupAndPrepareToRecord];
-    [recorder updateMeters];
+    
     [recorder record];
-}
+    
+    
 
-- (IBAction)endRecording:(id)sender
-{
-    [recorder stop];
 }
 
 - (void)setupAndPrepareToRecord

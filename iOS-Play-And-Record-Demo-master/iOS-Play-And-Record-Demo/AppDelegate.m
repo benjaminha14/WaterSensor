@@ -7,13 +7,21 @@
 //
 
 #import "AppDelegate.h"
-
+#import <AVFoundation/AVAudioSession.h>
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    return YES;
+    /*
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+   
+    [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord  withOptions:AVAudioSessionCategoryOptionMixWithOthers|AVAudioSessionCategoryOptionDefaultToSpeaker error:nil];
+    [audioSession setActive:YES error:nil];*/
+  
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionModeVoiceChat error:nil];
+
+       return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -26,6 +34,9 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:NULL];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
