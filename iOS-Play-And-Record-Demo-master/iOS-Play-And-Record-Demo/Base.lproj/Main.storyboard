@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OlO-LN-wUQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ztO-jo-yxh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press and hold to record. Tap to play." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsQ-Kr-X7F">
+                                <rect key="frame" x="20" y="215" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OUU-KK-szc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l13-t3-QIQ">
+                                <rect key="frame" x="91" y="284" width="138" height="90"/>
+                                <color key="backgroundColor" red="0.21322310656768673" green="0.37934323597312414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.12448415390000001" green="0.22569637419999999" blue="0.89646444520000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="record:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jjc-bu-tYJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l13-t3-QIQ" firstAttribute="centerX" secondItem="XsQ-Kr-X7F" secondAttribute="centerX" id="4t9-1i-21B"/>
+                            <constraint firstItem="XsQ-Kr-X7F" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="8TI-2d-f99"/>
+                            <constraint firstItem="l13-t3-QIQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="75" id="Kwe-Ye-i6z"/>
+                            <constraint firstItem="l13-t3-QIQ" firstAttribute="top" secondItem="XsQ-Kr-X7F" secondAttribute="bottom" constant="48" id="NLC-ak-FKw"/>
+                            <constraint firstItem="XsQ-Kr-X7F" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="RxP-oF-hG9"/>
+                            <constraint firstItem="ztO-jo-yxh" firstAttribute="top" secondItem="l13-t3-QIQ" secondAttribute="bottom" constant="194" id="V0t-T3-52j"/>
+                            <constraint firstItem="XsQ-Kr-X7F" firstAttribute="top" secondItem="OlO-LN-wUQ" secondAttribute="bottom" constant="195" id="x19-Ig-Wib"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="output" destination="XsQ-Kr-X7F" id="Hln-Hu-j7l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
