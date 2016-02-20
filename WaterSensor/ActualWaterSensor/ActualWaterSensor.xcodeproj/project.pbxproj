@@ -19,7 +19,6 @@
 		36A455FF1C4B139600D9DB13 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A455FE1C4B139600D9DB13 /* libz.tbd */; };
 		36A456011C4B13B900D9DB13 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A456001C4B13B900D9DB13 /* libsqlite3.tbd */; };
 		36A456051C4B1FE300D9DB13 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A456041C4B1FE300D9DB13 /* MapViewController.swift */; };
-		36A456071C4B30D200D9DB13 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A456061C4B30D200D9DB13 /* Logo.png */; };
 		36E6A8641C4A95CD00638E77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E6A8631C4A95CD00638E77 /* AppDelegate.swift */; };
 		36E6A8691C4A95CD00638E77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E6A8671C4A95CD00638E77 /* Main.storyboard */; };
 		36E6A86C1C4A95CD00638E77 /* ActualWaterSensor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36E6A86A1C4A95CD00638E77 /* ActualWaterSensor.xcdatamodeld */; };
@@ -58,7 +57,6 @@
 		36A455FE1C4B139600D9DB13 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		36A456001C4B13B900D9DB13 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		36A456041C4B1FE300D9DB13 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		36A456061C4B30D200D9DB13 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		36E6A8601C4A95CD00638E77 /* ActualWaterSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActualWaterSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E6A8631C4A95CD00638E77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36E6A8681C4A95CD00638E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 				36E6A8C91C4A9AE600638E77 /* AudioSessionManager.m */,
 				36E6A8CB1C4AA28500638E77 /* music.mp3 */,
 				36E6A86D1C4A95CD00638E77 /* Assets.xcassets */,
-				36A456061C4B30D200D9DB13 /* Logo.png */,
 				36A455EB1C4B125700D9DB13 /* Frameworks */,
 				36E6A86F1C4A95CD00638E77 /* LaunchScreen.storyboard */,
 				36E6A8721C4A95CD00638E77 /* Info.plist */,
@@ -275,7 +272,6 @@
 			files = (
 				36E6A8CC1C4AA28500638E77 /* music.mp3 in Resources */,
 				36E6A8711C4A95CD00638E77 /* LaunchScreen.storyboard in Resources */,
-				36A456071C4B30D200D9DB13 /* Logo.png in Resources */,
 				36E6A86E1C4A95CD00638E77 /* Assets.xcassets in Resources */,
 				36E6A8691C4A95CD00638E77 /* Main.storyboard in Resources */,
 			);
